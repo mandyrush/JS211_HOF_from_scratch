@@ -60,23 +60,19 @@ console.log(hAnimalList);
 
 // Test Callback Function to pass to Find
 let findCallbackTest = (element, i) => {
-    return element.length === 3;
+    return element === 'Dog';
 }
 
 // Find from Scratch
 let findScratch = (array, callback) => {
-    let newArray = [];
-
     for (let i = 0; i < array.length; i++) {
         let element = array[i];
         let newElement = callback(element, i);
 
         if(newElement) {
-            newArray.push(element);
+            return element;
         }
     }
-
-    return newArray;
 }
 
 // Testing Scratch Function
