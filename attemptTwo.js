@@ -76,8 +76,8 @@ let findScratch = (array, callback) => {
 }
 
 // Testing Scratch Function
-let threeLetterAnimals = findScratch(animals, findCallbackTest);
-console.log(threeLetterAnimals);
+let findDog = findScratch(animals, findCallbackTest);
+console.log(findDog);
 
 
 
